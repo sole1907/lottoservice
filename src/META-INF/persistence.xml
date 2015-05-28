@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BBCArsenalLottoServicePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.bbc.arsenallotto.model.BaLottoConfig</class>
+    <class>com.bbc.arsenallotto.model.Sts</class>
+    <class>com.bbc.arsenallotto.model.CodeGenerator</class>
+    <class>com.bbc.arsenallotto.model.Rolap</class>
+    <class>com.bbc.arsenallotto.model.MItms</class>
+    <class>com.bbc.arsenallotto.model.BaLottoEntry</class>
+    <class>com.bbc.arsenallotto.model.BaLottoResponse</class>
+    <class>com.bbc.arsenallotto.model.BaLottoMember</class>
+    <class>com.bbc.arsenallotto.model.MGrps</class>
+    <class>com.bbc.arsenallotto.model.BaLottoChannel</class>
+    <class>com.bbc.arsenallotto.model.UserMgrps</class>
+    <class>com.bbc.arsenallotto.model.BaLottoEntryDetails</class>
+    <class>com.bbc.arsenallotto.model.BaLottoAgent</class>
+    <class>com.bbc.arsenallotto.model.Prle</class>
+    <class>com.bbc.arsenallotto.model.PassConf</class>
+    <class>com.bbc.arsenallotto.model.BaLottoWinners</class>
+    <class>com.bbc.arsenallotto.model.BaLottoWinningsTotal</class>
+    <class>com.bbc.arsenallotto.model.BaLottoNotifications</class>
+    <class>com.bbc.arsenallotto.model.BaLottoWinningsSummary</class>
+    <class>com.bbc.arsenallotto.model.BaLottoWinningNumbers</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/balotto"/>
+      <property name="javax.persistence.jdbc.user" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="density"/>
+    </properties>
+  </persistence-unit>
+</persistence>
